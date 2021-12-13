@@ -53,6 +53,4 @@ export class CreerComponent implements OnInit {
   get numTel(){
     return this.creerForm.get('numTel');
   }
-
-
 }

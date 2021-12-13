@@ -1,35 +1,35 @@
 <div class="wrapper">
-    <div class="title">Connexion</div>
-    <form [formGroup]="connexionForm" (ngSubmit)="connexion()">
-      <div class="field">
-        <input type="text" type="text" id="nom" class="form-control" formControlName="nom" />
-        
-        <label>Nom d'utilisateur</label>
-
-        <span *ngIf="nom.errors" style="color:red;text-align:center">
-          <span *ngIf="nom.errors.required && nom.touched">Le nom d'utilisateur est obligatoire</span>
-          <div *ngIf="nom.errors.minlength && nom.dirty">Le nom d'utilisateur doit contenir au moins 8 caractères</div>
-      </span>
+  <div class="title">Connexion</div>
+  <form [formGroup]="connexionForm" (ngSubmit)="connexion()">
+    <div class="field">
+      <input type="text" type="text" id="nom" class="form-control" formControlName="nom" />
       
-      </div>
+      <label>Nom d'utilisateur</label>
 
-        <br><div class="field">
-        <input type="password" id="mot_de_passe" class="form-control" formControlName="password">
-        
-        <label>Mot de passe</label>
+      <span *ngIf="nom.errors" style="color:red;text-align:center">
+        <span *ngIf="nom.errors.required && nom.touched">Le nom d'utilisateur est obligatoire</span>
+        <div *ngIf="nom.errors.minlength && nom.dirty">Le nom d'utilisateur doit contenir au moins 8 caractères</div>
+    </span>
+    
+    </div>
 
-        <div *ngIf="password.errors" style="color:red;text-align:center">
-          <div *ngIf="password.errors.required && password.touched">Le mot de passe est obligatoire</div>
-          <div *ngIf="password.errors.minlength && password.dirty">Le mot de passe doit contenir au moins 6 caractères</div>
-      </div>
-      </div><br>
+      <br><div class="field">
+      <input type="password" id="mot_de_passe" class="form-control" formControlName="password">
+      
+      <label>Mot de passe</label>
 
-      <div class="field">
-        <input type="submit" value="Se connecter" [disabled]="connexionForm.invalid"/>
-      </div>
+      <div *ngIf="password.errors" style="color:red;text-align:center">
+        <div *ngIf="password.errors.required && password.touched">Le mot de passe est obligatoire</div>
+        <div *ngIf="password.errors.minlength && password.dirty">Le mot de passe doit contenir au moins 6 caractères</div>
+    </div>
+    </div><br>
 
-      <div class="signup-link">Nouvel utilisateur ? <br>
-        <a routerLink="/creer">Cliquer ici pour créer votre compte.</a>
-      </div>
-    </form>
+    <div class="field">
+      <input type="submit" value="Se connecter" [disabled]="connexionForm.invalid"/>
+    </div>
+
+    <div class="signup-link">Nouvel utilisateur ? <br>
+      <a routerLink="/creer">Cliquer ici pour créer votre compte.</a>
+    </div>
+  </form>
 </div>

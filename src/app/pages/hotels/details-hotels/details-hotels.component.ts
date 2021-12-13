@@ -12,6 +12,8 @@ import { HotelsService } from 'src/app/services/hotels.service';
 })
 export class DetailsHotelsComponent implements OnInit {
   lesHotels:Hotel|undefined;
+
+  lesHotel : any=[];
   hotels:Hotel[]=[];
   chambre:string[]=[];
   disponibilite:Disponibilite;
@@ -27,5 +29,16 @@ export class DetailsHotelsComponent implements OnInit {
     let i= this.activatedRoute.snapshot.params['id'];
     this.lesHotels=this.hotelsService.getHotelById(i);
     this.hotels=this.hotelsService.getHotels();
+
+    this.hotelsService.getAllHotels()
+ .subscribe (data => this.lesHotel = data)
+
+  }
+
+  getHotels(){
+    this.hotelsService.getAllHotels()
+    .subscribe(data => {
+      this.lesHotel = data;
+    })
   }
 }

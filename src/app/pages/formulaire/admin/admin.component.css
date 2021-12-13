@@ -36,3 +36,63 @@ h1{
     text-align:center;
     padding-top:1rem;
 }
+
+.container {
+    background-color: #ddedf7;
+    border-radius: 20px;
+}
+
+.addtxt {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 13px;
+    width: 350px;
+    background-color: #ced0d4;
+    font-weight: 500;
+}
+.addtxt:hover{
+    background-color: rgb(236, 224, 48);
+    transform:scale(1.1);
+}
+
+.second {
+    width: 450px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px #d4faff
+}
+
+.text1 {
+    font-size: 13px;
+    font-weight: 500;
+    color: #56575b
+}
+
+.text2 {
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 6px;
+    color: #203fbb
+}
+
+.text3 {
+    font-size: 13px;
+    font-weight: 500;
+    margin-right: 4px;
+    color: #db0d1e
+}
+
+.thumbup {
+    font-size: 13px;
+    font-weight: 500;
+    margin-right: 5px
+}
+
+.num{
+    background-color:rgba(150, 196, 173, 0.61);
+    border-radius: 50px;
+    width:110px;
+    height:100px;
+    margin-left:180px;
+}

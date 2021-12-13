@@ -18,7 +18,7 @@
 
         <div class="col-lg-2 mt-2 mb-2">
             <label for="nb_adultes">Nombre des adultes</label>
-            <input type="number" min=1 max=6 formControlName="nb_adultes" id="nb_adultes" class="form-control"/>
+            <input type="number" min=1 max=4 formControlName="nb_adultes" id="nb_adultes" class="form-control"/>
             <div *ngIf="nbAdultes.invalid && nbAdultes.touched" class="alert alert-danger">
                 Le nombre des adultes est obligatoire
             </div>
@@ -28,7 +28,7 @@
             </div>
 
             <div *ngIf="nbAdultes.errors?.max" class="alert alert-danger">
-                Il faut avoir 6 adultes au maximum !
+                Il faut avoir 4 adultes au maximum !
             </div>
         </div>
 
@@ -47,19 +47,19 @@
               formControlName="type_pension"
               *ngIf="lesHotels" id="type_pension"
               class="form-control"
-              (change)="selectedPension = $any($event).target.value"
-            >
+              (change)="selectedPension = $any($event).target.value">
                 <option *ngFor="let p of lesHotels.pension">{{p.libelleP}}</option>
             </select>
         </div>
     </div>
     <br>
-    <button (click)="validChambre()" (click)="calculerPrix()" class="btn btn-success" [disabled]="tarifsForm.invalid">Calculer le prix total</button>
+    <button (click)="typeChambre()" (click)="calculerPrix()" class="btn btn-success" [disabled]="tarifsForm.invalid">Calculer le prix total</button>
     <input type="button" value="Réinitialiser" (click)="onVider()" class="btn btn-warning">
     <div >
-        {{chamb}} <br>
-        {{message}}
+        {{typeChamb}} <br>
+        {{prix_total}} 
+<!--         <button (click)="getPrice()">Aff prix</button>
+        <button (click)="getDate1()">Aff date</button> -->
       </div>
-  <!--   <input type="text" formControlName="prix" class="form-control"  [value]="calculerPrix()" readonly/> -->
     </form>
 

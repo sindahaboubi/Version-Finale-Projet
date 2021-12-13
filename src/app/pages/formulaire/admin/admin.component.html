@@ -111,3 +111,55 @@
         </tr>
     </tbody>
 </table>
+
+<div class="container justify-content-center mt-5 border-left border-right">
+    <div class="d-flex justify-content-center pt-3 pb-2"> 
+        <input type="text" name="text" placeholder="Les avis des clients sur Best Tunisia Travel" class="form-control addtxt" readonly> </div>
+    <div class="d-flex justify-content-center py-2" *ngFor="let c of contact;index as i">
+        <div class="second py-2 px-2"> 
+            <span class="text1">{{c.nomFamille}}  {{c.prenom}}</span>
+            <div class="d-flex justify-content-between py-1 pt-2">
+                <div>
+                    <span class="text2">{{c.message}}</span></div>
+                <div>
+                    <span class="text3">{{c.email}}</span>
+                    <span class="thumbup">
+                        <i class="fa fa-thumbs-o-up"></i>
+                    </span>
+                    <span class="text4">{{i+1}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><br><br>
+
+<h1>Les comptes crées</h1>
+
+<div class="container">
+    <div class="card card-default" id="card_contacts">
+        <div id="contacts" class="panel-collapse collapse show" aria-expanded="true" style="">
+            <ul class="list-group pull-down" id="contact-list">
+                <li class="list-group-item" *ngFor="let u of utilisateurs,index as i">
+                    <div class="row w-100">
+                        <div class="col-12 col-sm-6 col-md-3 px-0">
+                            <h1 class="num">{{i+1}}</h1>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
+                            <span class="fa fa-mobile fa-2x text-success float-right pulse" title="online now"></span>
+                            <label class="name lead">{{u.nom}}</label>
+                            <br> 
+                            <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="5842 Hillcrest Rd"></span>
+                            <span class="text-muted">{{u.password}}</span>
+                            <br>
+                            <span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="(870) 288-4149"></span>
+                            <span class="text-muted small">{{u.numTel}}</span>
+                            <br>
+                            <span class="fa fa-envelope fa-fw text-muted" data-toggle="tooltip" data-original-title="" title=""></span>
+                            <span class="text-muted small text-truncate">{{u.email}}</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

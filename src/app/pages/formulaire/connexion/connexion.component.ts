@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
   templateUrl: './connexion.component.html',
   styleUrls: ['./connexion.component.css']
 })
+
 export class ConnexionComponent implements OnInit {
 
   public connexionForm:FormGroup;

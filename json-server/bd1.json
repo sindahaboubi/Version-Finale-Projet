@@ -1,28 +1,12 @@
 {
   "contact": [
     {
-      "nomFamille": "sinda",
-      "prenom": "haboubi",
-      "email": "sindahaboubi104@gmail.com",
-      "numTel": "51594959",
-      "message": "bonne agence !",
+      "nomFamille": "Cyline",
+      "prenom": "Ben Youssef",
+      "email": "Cyline147@gmail.com",
+      "numTel": "24578599",
+      "message": "La meuilleure agence bravo !",
       "id": 1
-    },
-    {
-      "nomFamille": "",
-      "prenom": "",
-      "email": "",
-      "numTel": "",
-      "message": "",
-      "id": 2
-    },
-    {
-      "nomFamille": "Ben Youssef",
-      "prenom": "Cyline",
-      "email": "cyline547@gmail.com",
-      "numTel": "25478547",
-      "message": "Meuilleure agence bravo !",
-      "id": 3
     }
   ],
   "utilisateurs": [
@@ -52,10 +36,10 @@
         "assets/Aqua_Resort/aqua2.jpg",
         "assets/Aqua_Resort/aqua3.jpg"
       ],
-      "prix": "174",
-      "ageEnfant": "6",
+      "prix": "169",
+      "ageEnfant": "3",
       "distanceCV": 1,
-      "distanceAer": 25,
+      "distanceAer": 23,
       "equipements": {
         "piscine": true,
         "parking": true,
@@ -68,10 +52,10 @@
         "piscine_couverte": false
       },
       "chambre": [
-        "Chambre single standard",
-        "Chambre double standard",
-        "Chambre triple standard",
-        "Chambre quadruple standard"
+        "single standard",
+        "double standard",
+        "triple standard",
+        "quadruple standard"
       ],
       "description": "Situé dans la zone touristique de Midoun à Djerba, au milieu d'un grand parc, à environ 200 m de la mer, avec accès direct à la meilleure plage de sable privée sur l'île, à travers les dunes de sable de verdure et la paume. L'hôtel SUNCONNECT DJERBA AQUA RESORT, quatre étoiles se trouve à 25 km de l'aéroport international de Djerba-Zarzis, à 16 km de Houmt Souk (la capitale de l'île), à 5 km de Midoun et à proximité du golf de Djerba 3courses de 9 trous.",
       "disponibilite": [
@@ -141,12 +125,12 @@
         "piscine_couverte": false
       },
       "chambre": [
-        "Chambre single Vue mer",
-        "Chambre single Standard Vue Jardin\t",
-        "Chambre double Standard Vue Jardin",
-        "Chambre triple Vue mer",
-        "Chambre quadruple Standard vue jardin",
-        "Chambre quadruple Standard vue mer"
+        "single Vue mer",
+        "single Standard Vue Jardin\t",
+        "double Standard Vue Jardin",
+        "triple Vue mer",
+        "quadruple Standard vue jardin",
+        "quadruple Standard vue mer"
       ],
       "description": "",
       "disponibilite": [
@@ -218,9 +202,9 @@
         "piscine_couverte": false
       },
       "chambre": [
-        "Chambre Standard, vue jardin ",
-        "Chambre Standard, vue mer",
-        "Chambre Double Standard"
+        "Standard, vue jardin ",
+        "Standard, vue mer",
+        "Double Standard"
       ],
       "description": "Hôtel en bord de plage à Midun avec 3 restaurants et un spa proposant des soins complets, Cet hôtel dispose de 215 chambres,les chambres de cet hôtel sont réparties sur 2 étages",
       "disponibilite": [
@@ -289,11 +273,11 @@
         "piscine_couverte": true
       },
       "chambre": [
-        "Chambre single Standard",
-        "Chambre single Standard Vue Jardin",
-        "Chambre triple Standard",
-        "Chambre familiale Vue mer",
-        "Chambre quadruple Standard"
+        "single Standard",
+        "single Standard Vue Jardin",
+        "triple Standard",
+        "familiale Vue mer",
+        "quadruple Standard"
       ],
       "description": "Situé dans une zone calme sur une des plus belles plages de la région à la route touristique el merazka Hammamet, L'hôtel EL Fell de classement pied dans l’eau vous promet des vacances inoubliables dans un cadre de relaxation. L’établissement est entouré d’un jardin verdoyant et fleuri et donne sur une belle plage de sable fin dorée. Il se trouve à mi-chemin entre Nabeul et Hammamet, à quelques minutes en voiture du centre-ville et à peu près une heure de l’aéroport de Tunis Carthage. ",
       "disponibilite": [
@@ -365,12 +349,12 @@
         "piscine_couverte": false
       },
       "chambre": [
-        "Chambre single Vue mer",
-        "Chambre single Standard Vue Jardin\t",
-        "Chambre double Standard Vue Jardin",
-        "Chambre triple Vue mer",
-        "Chambre quadruple Standard vue jardin",
-        "Chambre quadruple Standard vue mer"
+        "single Vue mer",
+        "single Standard Vue Jardin\t",
+        "double Standard Vue Jardin",
+        "triple Vue mer",
+        "quadruple Standard vue jardin",
+        "quadruple Standard vue mer"
       ],
       "description": "Hôtel La Résidence Hammamet est l’unique hôtel situé en plein centre-ville de Hammamet et à seulement 100m d'une plage privée de sable fin.Cet Hôtel saura vous en mettre plein les yeux avec son style arabo mauresque , et son patio naturellement frais et climatisé abritant un magnifique jardin fleurit au milieu du bâtiment.",
       "disponibilite": [
@@ -508,8 +492,8 @@
         "piscine_couverte": true
       },
       "chambre": [
-        "chambre single ",
-        "chambre quadriple standard"
+        "single ",
+        "quadriple standard"
       ],
       "description": "Le Yadis Hammamet est implanté au milieu de jardins soignés, palmiers et plantes méditerranéens et juste en face de la plage de MREZGA, qui est la plus renommée d’Hammamet, avec son sable fin et blanc .",
       "disponibilite": [
@@ -567,9 +551,9 @@
         "piscine_couverte": true
       },
       "chambre": [
-        "Chambre single ",
-        "Chambre quadriple standard",
-        "Chambre triple standard"
+        "single ",
+        "quadriple standard",
+        "triple standard"
       ],
       "description": "Mahdia Palace se trouve à 8 minutes en voiture du musée et à 9 minutes route de la gare de Mahdia. Sur place, vous profiterez aussi d'un espace de stationnement gratuit, d'une aire de jeux pour enfants et d'un service de garde d'enfants. Enfin, vous rejoindrez la forteresse Borj El Kebir en 9 minutes de route.Les couples apprécient particulièrement l'emplacement de cet établissement. Ils lui donnent la note de 8,0 pour un séjour à deux.",
       "disponibilite": [
@@ -635,12 +619,12 @@
         "piscine_couverte": true
       },
       "chambre": [
-        "Chambre single Vue mer",
-        "Chambre single Standard Vue Jardin\t",
-        "Chambre double Vue mer",
-        "Chambre triple Vue jardin",
-        "Chambre quadruple Standard vue jardin",
-        "Chambre quadruple Standard"
+        "single Vue mer",
+        "single Standard Vue Jardin\t",
+        "double Vue mer",
+        "triple Vue jardin",
+        "quadruple Standard vue jardin",
+        "quadruple Standard"
       ],
       "description": "One Resort Jockey Monastir se situe directement sur une plage de sable fin et de galets, à environ 2 km de l aéroport de Monastir, à 8 km du centre et 3 km du parcours de golf “Flamingo”",
       "disponibilite": [
@@ -712,11 +696,11 @@
         "piscine_couverte": false
       },
       "chambre": [
-        "Chambre double Vue mer",
-        "Chambre single Vue Jardin\t",
-        "Chambre double Vue jardin",
-        "Chambre triple Vue jardin",
-        "Chambre quadruple Standard vue mer"
+        "double Vue mer",
+        "single Vue Jardin\t",
+        "double Vue jardin",
+        "triple Vue jardin",
+        "quadruple Standard vue mer"
       ],
       "description": "L'hôtel Rosa Beach est Situé au cœur de la station hôtelière de Skanès, sur une plage méditerranéenne de sable fin, à 7km du centre de Monastir.",
       "disponibilite": [
@@ -755,6 +739,312 @@
         {
           "libelleP": "Tout inclus",
           "prixP": 77
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "libelle": "Hotel Byzance",
+      "localisation": "Nabeul",
+      "image": [
+        "assets/ByzanceN/bn0.jpg",
+        "assets/ByzanceN/bn1.jpg",
+        "assets/ByzanceN/bn2.jpg",
+        "assets/ByzanceN/bn3.jpg",
+        "assets/ByzanceN/bn4.jpg",
+        "assets/ByzanceN/bn5.jpg",
+        "assets/ByzanceN/bn6.jpg",
+        "assets/ByzanceN/bn07.jpg"
+      ],
+      "prix": 240,
+      "ageEnfant": 2,
+      "distanceCV": 2,
+      "distanceAer": 17,
+      "equipements": {
+        "piscine": true,
+        "parking": true,
+        "plage": true,
+        "wifi": true,
+        "restaurant": false,
+        "bien_etre": false,
+        "golf": false,
+        "club_enf": true,
+        "piscine_couverte": false
+      },
+      "chambre": [
+        "double vue mer",
+        "single Vue jardin",
+        "triple Vue jardin",
+        "double Vue mer",
+        "quadruple Standard vue mer"
+      ],
+      "description": "En choisissant Hotel Byzance à Nabeul, vous profiterez d'un séjour près d'un golf, à seulement 1 min à pied de Cape Bon et à 5 minutes de marche de Plage de Nabeul. Les équipements et services proposés incluent une réception ouverte 24 heures sur 24, une consigne à bagages",
+      "disponibilite": [
+        {
+          "date_debut": "2020-12-28T23:00:00.000Z",
+          "date_fin": "2021-02-21T23:00:00.000Z",
+          "siDisponible": false,
+          "pourcentage": 0
+        },
+        {
+          "date_debut": "2021-05-14T23:00:00.000Z",
+          "date_fin": "2021-06-09T23:00:00.000Z",
+          "siDisponible": true,
+          "pourcentage": 32
+        },
+        {
+          "date_debut": "2021-09-07T23:00:00.000Z",
+          "date_fin": "2021-09-21T23:00:00.000Z",
+          "siDisponible": false,
+          "pourcentage": 47
+        }
+      ],
+      "pension": [
+        {
+          "libelleP": "Petit déjeuner",
+          "prixP": 25
+        },
+        {
+          "libelleP": "Demi pension +",
+          "prixP": 20
+        },
+        {
+          "libelleP": "Pension complète +",
+          "prixP": 47
+        },
+        {
+          "libelleP": "Tout inclus",
+          "prixP": 68
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "libelle": "Novostar Budget Pyramides Club & Spa",
+      "localisation": "Nabeul",
+      "image": [
+        "assets/Novostar/n0.jpg",
+        "assets/Novostar/n1.jpg",
+        "assets/Novostar/n2.jpg",
+        "assets/Novostar/n3.jpg",
+        "assets/Novostar/n4.jpg",
+        "assets/Novostar/n5.jpg",
+        "assets/Novostar/n6.jpg",
+        "assets/Novostar/n7.jpg"
+      ],
+      "prix": 364,
+      "ageEnfant": 6,
+      "distanceCV": 68,
+      "distanceAer": 3,
+      "equipements": {
+        "piscine": true,
+        "parking": true,
+        "plage": true,
+        "wifi": true,
+        "restaurant": true,
+        "bien_etre": false,
+        "golf": true,
+        "club_enf": true,
+        "piscine_couverte": false
+      },
+      "chambre": [
+        "single Standard Vue Jardin",
+        "double Standard Vue Jardin",
+        "triple Standard Vue Jardin",
+        "quadruple Standard Vue Jardin"
+      ],
+      "description": "L'établissement Hôtel Les Pyramides est situé dans le quartier des affaires de Nabeul, à proximité de The Flipper Water Parc, Jasmine Golf et Carthage Land Hammamet. Avec des touches d'architecture marocaine, l'hôtel a été construit en 1980 et rénové en 2007.",
+      "disponibilite": [
+        {
+          "date_debut": "2021-06-11T23:00:00.000Z",
+          "date_fin": "2021-07-18T23:00:00.000Z",
+          "siDisponible": true,
+          "pourcentage": 15
+        },
+        {
+          "date_debut": "2021-08-02T23:00:00.000Z",
+          "date_fin": "2021-08-28T23:00:00.000Z",
+          "siDisponible": true,
+          "pourcentage": 0
+        },
+        {
+          "date_debut": "2021-09-16T23:00:00.000Z",
+          "date_fin": "2021-11-03T23:00:00.000Z",
+          "siDisponible": true,
+          "pourcentage": 62
+        }
+      ],
+      "pension": [
+        {
+          "libelleP": "Petit déjeuner",
+          "prixP": 19
+        },
+        {
+          "libelleP": "Demi pension +",
+          "prixP": 23
+        },
+        {
+          "libelleP": "Pension complète +",
+          "prixP": 52
+        },
+        {
+          "libelleP": "Tout inclus",
+          "prixP": 88
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "libelle": "Dar Ismail Tabarka",
+      "localisation": "Tabarka",
+      "image": [
+        "assets/dariT/dt0.jpg",
+        "assets/dariT/dt1.jpg",
+        "assets/dariT/dt2.jpg",
+        "assets/dariT/dt3.jpg",
+        "assets/dariT/dt4.jpg",
+        "assets/dariT/dt5.jpg",
+        "assets/dariT/dt6.jpg",
+        "assets/dariT/dt7.jpg"
+      ],
+      "prix": 287,
+      "ageEnfant": 4,
+      "distanceCV": 12,
+      "distanceAer": 0,
+      "equipements": {
+        "piscine": true,
+        "parking": true,
+        "plage": true,
+        "wifi": true,
+        "restaurant": true,
+        "bien_etre": true,
+        "golf": true,
+        "club_enf": true,
+        "piscine_couverte": true
+      },
+      "chambre": [
+        "single Standard Vue Jardin",
+        "double Standard Piscine & Mer",
+        "double Standard Vue Jardin",
+        "Suite junior Piscine & Mer",
+        "triple Standard Piscine & Mer",
+        "triple Standard Vue Jardin",
+        "quadruple Standard Vue Jardin"
+      ],
+      "description": "Découvrez nos promos sans frais de réservation ou d'annulation, des tarifs exceptionnels pour un séjour exceptionnel et spécial bien-être à l’hôtel Dar Ismail Tabarka ,L'hotel est proche de pins et de jardins ainsi que d'une plage blanche.",
+      "disponibilite": [
+        {
+          "date_debut": "2021-01-23T23:00:00.000Z",
+          "date_fin": "2021-02-18T23:00:00.000Z",
+          "siDisponible": true,
+          "pourcentage": 20
+        },
+        {
+          "date_debut": "2021-03-12T23:00:00.000Z",
+          "date_fin": "2021-04-09T23:00:00.000Z",
+          "siDisponible": false,
+          "pourcentage": 40
+        },
+        {
+          "date_debut": "2021-05-24T23:00:00.000Z",
+          "date_fin": "2021-06-10T23:00:00.000Z",
+          "siDisponible": true,
+          "pourcentage": 24
+        }
+      ],
+      "pension": [
+        {
+          "libelleP": "Petit déjeuner",
+          "prixP": 11
+        },
+        {
+          "libelleP": "Demi pension +",
+          "prixP": 15
+        },
+        {
+          "libelleP": "Pension complète +",
+          "prixP": 33
+        },
+        {
+          "libelleP": "Tout inclus",
+          "prixP": 76
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "libelle": "Anantara Sahara Tozeur Resort & Villas",
+      "localisation": "Tozeur",
+      "image": [
+        "assets/saharaT/s0.jpg",
+        "assets/saharaT/s1.jpg",
+        "assets/saharaT/s2.jpg",
+        "assets/saharaT/s3.jpg",
+        "assets/saharaT/s4.jpg",
+        "assets/saharaT/s5.jpg",
+        "assets/saharaT/s6.jpg",
+        "assets/saharaT/s7.jpg"
+      ],
+      "prix": 412,
+      "ageEnfant": 6,
+      "distanceCV": 14,
+      "distanceAer": 4,
+      "equipements": {
+        "piscine": true,
+        "parking": true,
+        "plage": true,
+        "wifi": true,
+        "restaurant": true,
+        "bien_etre": true,
+        "golf": true,
+        "club_enf": true,
+        "piscine_couverte": false
+      },
+      "chambre": [
+        "single Standard Vue Jardin",
+        "double Standard Piscine & Mer",
+        null,
+        "Suite junior Piscine & Mer",
+        "triple Standard Piscine & Mer",
+        "quadruple Standard Vue Jardin"
+      ],
+      "description": "L'Anantara Tozeur Resort propose des hébergements avec un restaurant, un parking privé gratuit, une piscine extérieure et une salle de sport.",
+      "disponibilite": [
+        {
+          "date_debut": "2021-03-20T23:00:00.000Z",
+          "date_fin": "2021-04-17T23:00:00.000Z",
+          "siDisponible": true,
+          "pourcentage": 0
+        },
+        {
+          "date_debut": "2021-04-14T23:00:00.000Z",
+          "date_fin": "2021-06-15T23:00:00.000Z",
+          "siDisponible": true,
+          "pourcentage": 70
+        },
+        {
+          "date_debut": "2021-07-24T23:00:00.000Z",
+          "date_fin": "2021-08-14T23:00:00.000Z",
+          "siDisponible": false,
+          "pourcentage": 0
+        }
+      ],
+      "pension": [
+        {
+          "libelleP": "Petit déjeuner",
+          "prixP": 19
+        },
+        {
+          "libelleP": "Demi pension +",
+          "prixP": 25
+        },
+        {
+          "libelleP": "Pension complète +",
+          "prixP": 57
+        },
+        {
+          "libelleP": "Tout inclus",
+          "prixP": 92
         }
       ]
     }

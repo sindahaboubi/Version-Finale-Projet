@@ -15,17 +15,14 @@ import {HotelsService} from 'src/app/services/hotels.service';
 export class FormTarifsComponent implements OnInit {
   submitted: boolean;
   selectedPension = "Petit déjeuner";
+  selectedPrix="";
 
-  constructor(private activatedRoute: ActivatedRoute, private hotelsService: HotelsService, private router: Router, private formBuilder: FormBuilder) {
-  }
-
+  constructor(private activatedRoute: ActivatedRoute, private hotelsService: HotelsService, private router: Router, private formBuilder: FormBuilder) {}
   lesHotels: Hotel;
   hotels: Hotel[] = [];
-
-  message: string = '';
-  chamb: string = '';
+  prix_total: string = '';
+  typeChamb: string = '';
   prix: number = 0;
-
   tarifsForm: FormGroup;
 
   onVider() {
@@ -36,24 +33,28 @@ export class FormTarifsComponent implements OnInit {
   }
 
 
-  validChambre() {
+  typeChambre() {
     let nbAdulte = this.tarifsForm.controls.nb_adultes.value;
     let nbEnfant = this.tarifsForm.controls.nb_enf.value;
-    if (nbAdulte == 1 && nbEnfant == 0)
-      this.chamb = "il s'agit d'une chambre single";
-    else if (nbAdulte == 2 && nbEnfant == 0 || nbAdulte == 0 && nbEnfant == 2 || nbAdulte == 1 && nbEnfant == 1)
-      this.chamb = "il s'agit d'une chambre double";
-    else if (nbAdulte == 2 && nbEnfant == 2 || nbAdulte == 1 && nbEnfant == 3)
-      this.chamb = "il s'agit d'une chambre quadruple";
-    else if (nbAdulte == 2 && nbEnfant == 2 || nbAdulte == 1 && nbEnfant == 3 || nbAdulte == 3 && nbEnfant == 1 || nbAdulte == 4 && nbEnfant == 0)
-      this.chamb = "il s'agit d'une chambre quadruple";
-    else if (nbAdulte == 3 && nbEnfant == 0 || nbAdulte == 2 && nbEnfant == 1 || nbAdulte == 1 && nbEnfant == 2 || nbAdulte == 0 && nbEnfant == 3)
-      this.chamb = "il s'agit d'une chambre triple";
-    else
-      this.chamb = "offre non disponible";
+    if (nbAdulte == 1 && nbEnfant == 0){
+      this.typeChamb= "Vous aurez une chambre Single";
+    }
+    else if (nbAdulte == 1 && nbEnfant == 1 || nbAdulte == 2 && nbEnfant == 0){
+      this.typeChamb= "Vous aurez une chambre Double";
+    }
+    else if (nbAdulte == 3 && nbEnfant == 0 || nbAdulte == 2 && nbEnfant == 1 || nbAdulte == 1 && nbEnfant == 2){
+      this.typeChamb= "Vous aurez une chambre Triple";
+    }
+    
+    else if (nbAdulte == 2 && nbEnfant == 2 || nbAdulte == 1 && nbEnfant == 3 || nbAdulte == 3 && nbEnfant == 1 || nbAdulte == 4 && nbEnfant == 0){
+      this.typeChamb= "Vous aurez une chambre Quadruple";
+    }
+    else{
+      this.typeChamb= "Erreur ! Nos chambres ne peuvent pas contenir plus de 4 personnes !";
+    }
   }
 
-  siDisponible(date1: Date, date2: Date) {
+  /* siDisponible(date1: Date, date2: Date) {
     let table = this.lesHotels.disponibilite;
     for (let i = 0; i < table.length; i++) {
       if (table[i].date_fin >= date1 && table[i].date_debut <= date1) {
@@ -63,18 +64,16 @@ export class FormTarifsComponent implements OnInit {
       }
     }
     return false;
-  }
+  } */
 
-// getPensionPrice() : cette fonction retourne le prix de la pension selectionée
-  getPensionPrice(pension: String) {
-    let selectedPension = this.lesHotels.pension.find(item => item.libelleP === pension);
+  getPrixPension(pension: String) {
+    let selectedPension = this.lesHotels.pension.find(i => i.libelleP === pension);
     return selectedPension.prixP;
   }
 
   calculerPrix() {
+    let prixPension = this.getPrixPension(this.selectedPension);
 
-    let pensionPrice = this.getPensionPrice(this.selectedPension);
-    alert("prix de pension = "+pensionPrice);
     let date1 = new Date(this.tarifsForm.controls.d_arrive.value);
     let date2 = new Date(this.tarifsForm.controls.d_depart.value);
 
@@ -84,12 +83,7 @@ export class FormTarifsComponent implements OnInit {
     let nbAdulte = this.tarifsForm.controls.nb_adultes.value;
     let nbEnfant = this.tarifsForm.controls.nb_enf.value;
 
-    this.prix = pensionPrice;
-    alert(this.prix);
-    if (nbEnfant == 0)
-      this.message = "le prix totale est" + nbAdulte * this.prix * nb_jours;
-    else
-      this.message = "le prix totale " + (nbAdulte * this.prix + nbEnfant * this.prix / 2) * nb_jours;
+    this.prix_total = "Prix total = " + nbAdulte * prixPension * nb_jours + " DT";
   }
 
   ngOnInit() {
@@ -108,29 +102,6 @@ export class FormTarifsComponent implements OnInit {
       }
     )
   }
-
-  /*     siDisponible(dA:Date, DD:Date){
-        let table = this.lesHotels.disponibilite;
-        for (let i = 0; i < table.length; i++) {
-          if(table[i].date_fin >= dA && table[i].date_debut <= dA){
-            if(table[i].date_fin <= DD && table[i].date_debut >= DD){
-              return true;
-            }
-          }
-        }
-        return false;
-      } */
-
-  /*     calculePrix(){
-        let dA=this.tarifsForm.controls['d_arrive'].value;
-        let DD=this.tarifsForm.controls['d_depart'].value;
-        if(this.siDisponible(dA,DD)){
-          var Time = DD.getTime() - dA.getTime();
-          var nb_jours = Time / (1000 * 3600 * 24);
-          return nb_jours;
-        }
-        return 0;
-      } */
 
   onSubmit() {
     this.submitted = true;

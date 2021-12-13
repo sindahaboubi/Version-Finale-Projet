@@ -11,10 +11,11 @@ import { HotelsService } from 'src/app/services/hotels.service';
 
 export class AdminComponent implements OnInit {
   lesHotels : any=[];
-  contact:any[];
   condition:boolean = false;
   formAdmin : FormGroup;
   equipements: FormGroup;
+  contact:any[];
+  utilisateurs:any[];
 
   hotel:any={
     id:'',
@@ -56,6 +57,10 @@ export class AdminComponent implements OnInit {
         Club_enfants: true,
         Piscine_couverte: true
       })
+
+      this.hotelsService.getContacts().subscribe (data => this.contact = data);
+      this.hotelsService.getUtilisateurs().subscribe (data => this.utilisateurs = data);
+
     }
 
   getHotels(){
