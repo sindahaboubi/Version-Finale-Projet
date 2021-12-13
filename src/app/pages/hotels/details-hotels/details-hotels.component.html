@@ -1,0 +1,103 @@
+<!-- <div class="card" *ngIf="lesHotels">
+    <div class="card-header">{{lesHotels.localisation}}</div>
+</div>
+
+<div *ngIf="lesHotels">
+    <p>{{lesHotels.offre.saison}}</p>
+    <p>{{lesHotels.offre.prix}}</p>
+    <p>{{lesHotels.offre.promo}}</p>
+</div> -->
+
+<!-- <p *ngFor="let d of h.disponibilite">De {{d.date_debut |date}} à {{d.date_fin |date}}</p>
+ -->
+ 
+  <div class="container">
+		<div class="card">
+			<div class="container-fliud">
+				<h3 style="text-align:center" class="product-title" *ngIf="lesHotels">{{lesHotels.libelle}}</h3>
+
+				<div class="contenu_carou_auto" *ngIf="lesHotels">
+					<div class="caroussel-image">
+					<img [src]="lesHotels.image[0]" alt>
+					<img [src]="lesHotels.image[1]" alt>
+					<img [src]="lesHotels.image[2]" alt>
+					<img [src]="lesHotels.image[3]" alt>
+					<img [src]="lesHotels.image[0]" alt>
+					<img [src]="lesHotels.image[2]" alt>
+					<img [src]="lesHotels.image[3]" alt>
+					</div>
+				</div>
+
+
+				<div></div>
+
+				<div class="wrapper row">
+<!-- 					<div class="preview col-md-6">
+						
+						<div class="preview-pic tab-content">
+						  <div class="tab-pane active" id="pic-1" *ngIf="lesHotels"> <img [src]="lesHotels.image[0]" /></div>
+						</div>
+ 
+						<div *ngFor="let im of lesHotels.image">
+							<div>
+								<img [src]="im" id="image"/>
+							</div>
+						</div>
+					</div> -->
+
+					<div class="details col-md-6">
+						<div class="rating" style="font-size:18px">
+							<div class="stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<span class="review-no" *ngIf="lesHotels"><i class="bi bi-geo-alt-fill"></i> Tunisie, {{lesHotels.localisation}}</span><br>
+                            <span class="review-no" *ngIf="lesHotels"><i class="fa fa-plane"></i> {{lesHotels.distanceAer |km}} jusqu'au Aéroport</span><br>
+							<span class="review-no" *ngIf="lesHotels"><i class="bi bi-bookmark-check-fill"></i> {{lesHotels.distanceCV |km}} de centre ville </span><br>
+							<span class="review-no" *ngIf="lesHotels"><i class="bi bi-geo-alt-fill" *ngIf="lesHotels.ageEnfant !=0"></i> <span *ngIf="lesHotels.ageEnfant !=0"> Enfant -{{lesHotels.ageEnfant}} ans gratuit</span></span><br>
+							<span class="review-no" *ngIf="lesHotels">Prix à partir de {{lesHotels.prix|personne}} </span><br>
+
+
+							<div id="divD">
+								<div *ngFor="let d of lesHotels.disponibilite" [ngClass]="d.siDisponible==true?'alert-dark':'c2'">De {{d.date_debut|date:'dd/MM/yyyy'}} à {{d.date_fin|date:'dd/MM/yyyy'}} 
+									<span *ngIf="d.siDisponible==true">disponible !</span>
+									<span *ngIf="d.pourcentage !=0"> Avec une promotion de {{d.pourcentage}}% .</span>
+
+									<span *ngIf="display">
+										<span *ngIf="lesHotels">prix de {{( lesHotels.prix - (lesHotels.prix*d.pourcentage /100) ) |number:'3.2'}} DT /personne</span>
+									</span>
+								</div>
+								<button id="btnlink" class="btn btn-link alert-dark" (click)="afficherPrix()">Afficher les prix</button>
+							</div>
+			            </div>
+					</div>
+					<div style="border-left:1px solid rgba(0, 0, 0, 0.473);margin-left: 550px;height:220px;margin-top:-180px"></div>
+
+
+					<div class=" row">
+						<div class="col-md-12">
+						  <div class="widget-recap">
+							<app-equipements></app-equipements>
+						  </div>
+						</div>
+					</div>
+					
+					<div>
+						<h3>Chambres </h3>
+						<ul class="list-group">
+							<li *ngFor="let x of lesHotels.chambre" class="list-group-item">{{x}}</li>
+					    </ul>
+					</div>
+
+                   <p class="product-description">{{lesHotels.description}}</p>
+
+				   <h3>Tarifs</h3>
+				   <app-form-tarifs></app-form-tarifs>
+				</div>        
+			</div>
+      
+		</div>
+	</div>

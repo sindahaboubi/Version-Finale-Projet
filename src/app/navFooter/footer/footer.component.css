@@ -1,0 +1,46 @@
+.footer{
+    overflow: hidden;
+    position: sticky;
+    top: 100%;
+    background-color:rgba(0, 0, 0, 0.842);
+    padding: 15px 10px;
+}
+
+h1{
+    font-weight: bold;
+    color: rgb(0, 238, 255);
+    font-size: 20px;
+}
+
+p{
+    color: rgba(255, 251, 0, 0.788);
+    font-size: 15px;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 5px;
+    font-size: 18px;
+}
+a:hover 
+{
+    color:cyan;
+}
+
+i{
+    padding: 0px 10px;
+}
+
+#instagram:hover{
+    color:rgb(255, 0, 221);
+}
+#twitter:hover{
+    color:rgb(0, 204, 255);
+}
+#youtube:hover{
+    color:rgb(255, 0, 0);
+}
+#facebook:hover{
+    color:rgb(53, 113, 243);
+}

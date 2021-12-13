@@ -1,0 +1,67 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <span class="titre">Hôtels à Tunisie</span>
+    <span class="titre" *ngIf="localisation!='Tunisie'">
+      <span *ngIf="nb_hotels>0">{{nb_hotels}}</span>
+      <span>  Hôtels à {{localisation}} <span *ngIf="localisation!='Tunisie'">Tunisie</span></span>
+    </span>
+  </div>
+  </nav>
+  <br>
+  
+  <div class="tabcont d-flex justify-content-center"> 
+    <ul class="nav nav-tabs">
+      <li class="nav-item mr-md-3">
+        <button id="lst" class="nav-link active px-3" (click)="onafficher()">Tous</button>
+      </li>
+  
+      <li class="nav-item mr-md-3" *ngFor="let l of localisations">
+        <button id="lst" class="nav-link active px-3" (click)="onchange(l)">{{l}}</button>
+      </li>
+    </ul>
+  </div> 
+  <br>
+  
+  <div class="tabcont d-flex justify-content-center "> 
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item mr-md-3">
+          <button class="nav-link active px-3" id="btn" (click)="onafficher()">Tous les hotels</button>
+        </li>
+        <li class="nav-item mr-md-3">
+          <button class="nav-link active px-3 " id="btn"  (click)="hotelBasPrix(100)">Hotels à bas prix</button>
+        </li>
+        <li class="nav-item mr-md-3">
+          <button class="nav-link active px-3 " id="btn" (click)="enfantGratuit(0)">Promo Gratuité Enfant</button>
+        </li>
+      </ul>
+    </div> 
+  
+    <br>
+    <div class="row justify-content-center padding">
+      <div class="col-md-8 ftco-animate fadeInUp ftco-animated">
+          <form action="#" class="domain-form" [formGroup]="rechercheForm" (ngSubmit)="afficherHotelParNom()">
+              <div class="form-group d-md-flex"> 
+    <input type="text" class="form-control px-4" #textbox placeholder="Rechercher un hotel" formControlName="libelle" />
+    <button class="search-domain btn btn-primary px-5">Rechercher</button>
+    <span *ngIf="test2" style="display: block;">{{chercherParLibelle(textbox.value)}}</span>
+  </div>
+</form>
+</div>
+</div>
+  
+  <div class="container mt-5 mb-5">
+      <div class="row">
+          <div class="col-md-4" *ngFor="let h of lesHotels;index as i">
+              <div class="foodbox mt-3 mb-3">
+                  <img class="card-img-top" [src]="h.image[0]" alt="image">
+                  <h1 class="text-center">{{h.libelle}}</h1>
+                  <p><i class="bi bi-geo-alt-fill"></i>  {{h.localisation}}</p>
+                  <p>A partir de : {{h.prix |personne}}</p>
+                  <p *ngIf="h.ageEnfant != 0">Enfant -{{h.ageEnfant}} ans GRATUIT</p>
+                  <p>{{h.distanceCV}} km jusqu'au centre ville</p>
+                  <br/>
+                  <button class="btn btn-primary" [routerLink]="['/hotels', h.id]"><i class="bi bi-plus-square"></i>  Voir les détails</button>
+              </div>
+          </div>
+      </div>
+  </div>

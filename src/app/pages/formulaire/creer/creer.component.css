@@ -1,0 +1,115 @@
+.b-height{
+    position: relative;
+    padding:25px 0px 0px;
+}
+
+.b-wrapper{
+    display:flex;
+    align-items:center;
+    min-height: 650px;
+    background-color: rgba(233, 249, 250, 0.712);
+    box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.2);
+} 
+
+.b-min-height{
+    height: 750px;
+    background: #09cccc;    
+}
+
+.b-title{
+    padding:100px 0px 0px;
+}
+
+.b-title h1{
+    color:rgb(255, 255, 255);
+    font-weight:600;
+}
+
+.b-title p{
+    color: #ffffff;
+    margin:30px 0px 40px;
+}
+
+.b-title button{
+    letter-spacing: 1px;
+    padding: 15px 95px;
+    border-radius: 36px;
+    border: 1.8px solid rgb(255, 255, 255);
+    background: transparent;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.b-form{
+    width:60%;
+    margin:auto;
+}
+
+.b-form-title h1{
+    color: #00bdaa;
+    font-size: 39px;
+    font-weight: 900;
+}
+
+.b-form-title i{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 36px;
+    line-height: 46px;
+    font-size: 20px;
+    margin: 13px 5px;
+    color:rgb(55, 54, 59);
+    cursor:pointer;
+}
+
+.b-subtext{
+    color: #b4b2b2;
+    font-size: 14px;
+}
+
+.b-form .form-control{
+    font-size:14px;
+    height: 50px;
+    padding-left: 45px;
+    background: #c6e5f1;
+    border-color: #e7e7e7;
+    color: #333;
+}
+
+.b-form .form-control:focus{
+    outline:none;
+    box-shadow:none;
+} 
+
+.form-group{
+    position: relative;
+}
+
+.b-font{
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    z-index: 10;
+    color: #6b6b6b;
+    font-size:13px;
+}   
+
+.b-form button{
+    letter-spacing: 0.4px;
+    padding: 15px 85px;
+    border-radius: 36px;
+    border: 1.5px solid #fff;
+    background: #00bdaa;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top:25px;
+}
+
+.b-form button:focus{
+    outline:none;
+}
+
+label{
+    color:rgb(250, 234, 234);
+} 

@@ -1,0 +1,75 @@
+.banner
+{
+    background-image: url('../../../assets/accueil.jpg');
+    height: 600px;
+    background-position: center top;
+    background-size: cover;
+}
+
+label{
+    color:white;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+#btn{
+    font-weight: bold;
+    position:absolute;
+    left:300px;
+    top:350px;
+}
+#btn:hover{
+    background-color:rgb(182, 216, 255);
+}
+
+.content{
+    top: 30%;
+    left: 20%;
+    position: absolute;
+}
+
+.content h1{
+    color: rgba(252, 252, 252, 0.89);
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.stepBox{
+    background-color: rgb(2, 14, 46);
+    padding: 20px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.stepBox h1{
+    font-size: 40px;
+    font-weight: bold;
+    color:rgb(241, 149, 28);
+}
+
+.stepBox p{
+    font-size: 20px;
+    color: rgb(253, 253, 253);
+}
+
+.highlight{
+    color:black;
+    font-weight: bold;
+}
+
+.hotelsbox{
+    padding: 10px 5px;
+} 
+.hotelsbox img
+{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.hotelsbox h1 
+{
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+}

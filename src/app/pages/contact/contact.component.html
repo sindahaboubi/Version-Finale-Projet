@@ -1,0 +1,42 @@
+<div class="container mt-5 mb-5">
+    <h1>Contactez-nous</h1>
+    <p>Pour toute question ou tout besoin d'informations, n'hésitez pas à nous contacter une équipe d'experts se tient à votre disposition pour vous répondre et vous conseiller.</p>
+    <form class="col-lg-8" [formGroup]="formContact" (ngSubmit)="envoyer()"> 
+        <div class="row"> 
+            <div class="col-lg-5 mt-2 mb-2">
+                <input type="text" formControlName="nomFamille" class="form-control" placeholder="Nom de famille*" >
+                <span *ngIf="nomFamille.errors" class="msgErreur">
+                    <span *ngIf="nomFamille.errors.required && nomFamille.touched">Le nom de famille est obligatoire</span>
+                    <div *ngIf="nomFamille.errors.pattern && nomFamille.dirty">Le nom de famille doit contenir uniquement des lettres</div>
+                </span>
+            </div>
+
+            <div class="col-lg-5 mt-2 mb-2">
+                <input type="text" formControlName="prenom" class="form-control" placeholder="Prénom*" >
+                <span *ngIf="prenom.errors" class="msgErreur">
+                    <span *ngIf="prenom.errors.required && prenom.touched">Le prenom est obligatoire</span>
+                    <div *ngIf="prenom.errors.pattern && prenom.dirty">Le prenom doit contenir uniquement des lettres</div>
+                </span>
+            </div>
+
+            <div class="col-lg-10 mt-2 mb-2">
+                <input type="text" formControlName="email" class="form-control" placeholder="E-mail*" >
+            </div>
+
+            <div class="col-lg-10 mt-2 mb-2">
+                <input type="text" formControlName="numTel" class="form-control" placeholder="Numéro de téléphone" >
+            </div>
+
+            <div class="col-lg-10 mt-2 mb-2">
+                <input type="text" formControlName="message" class="form-control" placeholder="Ecrire un message" >
+                <span *ngIf="message.errors" class="msgErreur">
+                    <span *ngIf="message.errors.required && message.touched">Veuillez écrire un message !</span>
+                </span>
+            </div>
+
+            <div class="col-lg-12">
+                <button class="btn btn-md btn-dark" [disabled]="formContact.invalid">Envoyer</button>
+            </div>
+        </div>
+    </form>
+</div>

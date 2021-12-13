@@ -1,0 +1,46 @@
+img{
+    width:320px;
+    height:250px;
+    border-radius:20px;
+}
+
+.navbar{
+    background-color:rgba(216, 184, 4, 0.699);
+}
+
+#lst{    
+    color:blue;
+}
+
+#btn{
+    background-color: rgb(235, 235, 235);
+}
+
+#lst:hover{
+    background-color:rgb(238, 238, 238);
+    color:rgb(82, 88, 82);
+}
+
+.titre{
+    font-size: 30px;
+    text-align: center;
+    color:aliceblue;
+    font-weight: bold;
+}
+
+.c1{
+    color:green;
+}
+
+.c2{
+    color:black;
+}
+
+button:hover.c3{
+    background-color:green;
+}
+
+button:hover.c4{
+    background-color:red;
+}
+

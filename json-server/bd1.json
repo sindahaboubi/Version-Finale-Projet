@@ -1,0 +1,762 @@
+{
+  "contact": [
+    {
+      "nomFamille": "sinda",
+      "prenom": "haboubi",
+      "email": "sindahaboubi104@gmail.com",
+      "numTel": "51594959",
+      "message": "bonne agence !",
+      "id": 1
+    },
+    {
+      "nomFamille": "",
+      "prenom": "",
+      "email": "",
+      "numTel": "",
+      "message": "",
+      "id": 2
+    },
+    {
+      "nomFamille": "Ben Youssef",
+      "prenom": "Cyline",
+      "email": "cyline547@gmail.com",
+      "numTel": "25478547",
+      "message": "Meuilleure agence bravo !",
+      "id": 3
+    }
+  ],
+  "utilisateurs": [
+    {
+      "nom": "sindahaboubi",
+      "numTel": "51594959",
+      "email": "sindahaboubi104@gmail.com",
+      "password": "sinda147",
+      "id": 1
+    },
+    {
+      "nom": "administrateur",
+      "numTel": 21625475765,
+      "email": "sindahaboubi104@gmail.com",
+      "password": "administrateur",
+      "id": 2
+    }
+  ],
+  "lesHotels": [
+    {
+      "id": 1,
+      "libelle": "Hôtel Djerba Aqua Resort",
+      "localisation": "Djerba",
+      "image": [
+        "assets/Aqua_Resort/aqua1.jpg",
+        "assets/Aqua_Resort/aqua1.jpg",
+        "assets/Aqua_Resort/aqua2.jpg",
+        "assets/Aqua_Resort/aqua3.jpg"
+      ],
+      "prix": "174",
+      "ageEnfant": "6",
+      "distanceCV": 1,
+      "distanceAer": 25,
+      "equipements": {
+        "piscine": true,
+        "parking": true,
+        "plage": true,
+        "wifi": true,
+        "restaurant": true,
+        "bien_etre": false,
+        "golf": false,
+        "club_enf": false,
+        "piscine_couverte": false
+      },
+      "chambre": [
+        "Chambre single standard",
+        "Chambre double standard",
+        "Chambre triple standard",
+        "Chambre quadruple standard"
+      ],
+      "description": "Situé dans la zone touristique de Midoun à Djerba, au milieu d'un grand parc, à environ 200 m de la mer, avec accès direct à la meilleure plage de sable privée sur l'île, à travers les dunes de sable de verdure et la paume. L'hôtel SUNCONNECT DJERBA AQUA RESORT, quatre étoiles se trouve à 25 km de l'aéroport international de Djerba-Zarzis, à 16 km de Houmt Souk (la capitale de l'île), à 5 km de Midoun et à proximité du golf de Djerba 3courses de 9 trous.",
+      "disponibilite": [
+        {
+          "date_debut": "2021-12-13T23:00:00.000Z",
+          "date_fin": "2022-02-02T00:00:00.000Z",
+          "siDisponible": true,
+          "pourcentage": 0
+        },
+        {
+          "date_debut": "2022-02-09T23:00:00.000Z",
+          "date_fin": "2022-03-17T00:00:00.000Z",
+          "siDisponible": false,
+          "pourcentage": 80
+        },
+        {
+          "date_debut": "2022-03-31T23:00:00.000Z",
+          "date_fin": "2022-04-27T00:00:00.000Z",
+          "siDisponible": true,
+          "pourcentage": 75
+        }
+      ],
+      "pension": [
+        {
+          "libelleP": "Petit déjeuner",
+          "prixP": 30
+        },
+        {
+          "libelleP": "Demi pension +",
+          "prixP": 25
+        },
+        {
+          "libelleP": "Pension complète +",
+          "prixP": 50
+        },
+        {
+          "libelleP": "Tout inclus",
+          "prixP": 95
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "libelle": "Hôtel Nour Congress & Resort",
+      "localisation": "Bizerte",
+      "image": [
+        "assets/nour/nour.jpg",
+        "assets/nour/nour0.jpg",
+        "assets/nour/nour1.jpg",
+        "assets/nour/nour2.jpg",
+        "assets/nour/nour3.jpg",
+        "assets/nour/nour4.jpg"
+      ],
+      "prix": 225,
+      "ageEnfant": "10",
+      "distanceCV": 20,
+      "distanceAer": 8,
+      "equipements": {
+        "piscine": true,
+        "parking": true,
+        "plage": true,
+        "wifi": true,
+        "restaurant": true,
+        "bien_etre": true,
+        "golf": false,
+        "club_enf": false,
+        "piscine_couverte": false
+      },
+      "chambre": [
+        "Chambre single Vue mer",
+        "Chambre single Standard Vue Jardin\t",
+        "Chambre double Standard Vue Jardin",
+        "Chambre triple Vue mer",
+        "Chambre quadruple Standard vue jardin",
+        "Chambre quadruple Standard vue mer"
+      ],
+      "description": "",
+      "disponibilite": [
+        {
+          "date_debut": "2022-01-31T23:00:00.000Z",
+          "date_fin": "2022-03-23T00:00:00.000Z",
+          "siDisponible": true,
+          "pourcentage": 25
+        },
+        {
+          "date_debut": "2022-03-06T23:00:00.000Z",
+          "date_fin": "2022-04-29T00:00:00.000Z",
+          "siDisponible": false,
+          "pourcentage": 100
+        },
+        {
+          "date_debut": "2022-05-05T23:00:00.000Z",
+          "date_fin": "2022-06-07T00:00:00.000Z",
+          "siDisponible": false,
+          "pourcentage": 15
+        }
+      ],
+      "pension": [
+        {
+          "libelleP": "Petit déjeuner",
+          "prixP": 14
+        },
+        {
+          "libelleP": "Demi pension +",
+          "prixP": 18
+        },
+        {
+          "libelleP": "Pension complète +",
+          "prixP": 32
+        },
+        {
+          "libelleP": "Tout inclus",
+          "prixP": 78
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "libelle": "Hôtel Hasdrubal Thalassa",
+      "localisation": "Djerba",
+      "image": [
+        "assets/Hasdrubal/hasdrubal0.jpg",
+        "assets/Hasdrubal/hasdrubal1.jpg",
+        "assets/Hasdrubal/hasdrubal2.jpg",
+        "assets/Hasdrubal/hasdrubal3.jpg",
+        "assets/Hasdrubal/hasdrubal4.jpg",
+        "assets/Hasdrubal/hasdrubal5.jpg",
+        "assets/Hasdrubal/hasdrubal6.jpg",
+        "assets/Hasdrubal/hasdrubal7.jpg"
+      ],
+      "prix": 183,
+      "ageEnfant": 0,
+      "distanceCV": 2.4,
+      "distanceAer": 5,
+      "equipements": {
+        "piscine": true,
+        "parking": true,
+        "plage": true,
+        "wifi": true,
+        "restaurant": true,
+        "bien_etre": true,
+        "golf": false,
+        "club_enf": false,
+        "piscine_couverte": false
+      },
+      "chambre": [
+        "Chambre Standard, vue jardin ",
+        "Chambre Standard, vue mer",
+        "Chambre Double Standard"
+      ],
+      "description": "Hôtel en bord de plage à Midun avec 3 restaurants et un spa proposant des soins complets, Cet hôtel dispose de 215 chambres,les chambres de cet hôtel sont réparties sur 2 étages",
+      "disponibilite": [
+        {
+          "date_debut": "2021-12-09T23:00:00.000Z",
+          "date_fin": "2022-01-18T00:00:00.000Z",
+          "siDisponible": false,
+          "pourcentage": 10
+        },
+        {
+          "date_debut": "2022-02-08T23:00:00.000Z",
+          "date_fin": "2022-04-24T00:00:00.000Z",
+          "siDisponible": false,
+          "pourcentage": 78
+        },
+        {
+          "date_debut": "2022-05-08T23:00:00.000Z",
+          "date_fin": "2022-06-24T00:00:00.000Z",
+          "siDisponible": true,
+          "pourcentage": 15
+        }
+      ],
+      "pension": [
+        {
+          "libelleP": "Petit déjeuner",
+          "prixP": 25
+        },
+        {
+          "libelleP": "Demi pension +",
+          "prixP": 35
+        },
+        {
+          "libelleP": "Pension complète +",
+          "prixP": 70
+        },
+        {
+          "libelleP": "Tout inclus",
+          "prixP": 105
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "libelle": "Hôtel El Fell",
+      "localisation": "Hammamet",
+      "image": [
+        "assets/Fell/fell0.jpg",
+        "assets/Fell/fell1.jpg",
+        "assets/Fell/fell2.jpg",
+        "assets/Fell/fell3.jpg",
+        "assets/Fell/fell4.jpg"
+      ],
+      "prix": 140,
+      "ageEnfant": 6,
+      "distanceCV": 10,
+      "distanceAer": 60,
+      "equipements": {
+        "piscine": true,
+        "parking": true,
+        "plage": true,
+        "wifi": true,
+        "restaurant": true,
+        "bien_etre": true,
+        "golf": true,
+        "club_enf": true,
+        "piscine_couverte": true
+      },
+      "chambre": [
+        "Chambre single Standard",
+        "Chambre single Standard Vue Jardin",
+        "Chambre triple Standard",
+        "Chambre familiale Vue mer",
+        "Chambre quadruple Standard"
+      ],
+      "description": "Situé dans une zone calme sur une des plus belles plages de la région à la route touristique el merazka Hammamet, L'hôtel EL Fell de classement pied dans l’eau vous promet des vacances inoubliables dans un cadre de relaxation. L’établissement est entouré d’un jardin verdoyant et fleuri et donne sur une belle plage de sable fin dorée. Il se trouve à mi-chemin entre Nabeul et Hammamet, à quelques minutes en voiture du centre-ville et à peu près une heure de l’aéroport de Tunis Carthage. ",
+      "disponibilite": [
+        {
+          "date_debut": "2021-12-31T23:00:00.000Z",
+          "date_fin": "2022-01-29T00:00:00.000Z",
+          "siDisponible": true,
+          "pourcentage": 19
+        },
+        {
+          "date_debut": "2022-02-10T23:00:00.000Z",
+          "date_fin": "2022-02-27T00:00:00.000Z",
+          "siDisponible": true,
+          "pourcentage": 30
+        },
+        {
+          "date_debut": "2022-03-20T23:00:00.000Z",
+          "date_fin": "2022-04-27T00:00:00.000Z",
+          "siDisponible": false,
+          "pourcentage": 40
+        }
+      ],
+      "pension": [
+        {
+          "libelleP": "Petit déjeuner",
+          "prixP": 18
+        },
+        {
+          "libelleP": "Demi pension +",
+          "prixP": 32
+        },
+        {
+          "libelleP": "Pension complète +",
+          "prixP": 64
+        },
+        {
+          "libelleP": "Tout inclus",
+          "prixP": 99
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "libelle": "Hôtel Résidence Hammamet",
+      "localisation": "Hammamet",
+      "image": [
+        "assets/ResidenceH/res0.jpg",
+        "assets/ResidenceH/res1.jpg",
+        "assets/ResidenceH/res2.jpg",
+        "assets/ResidenceH/res3.jpg",
+        "assets/ResidenceH/res4.jpg",
+        "assets/ResidenceH/res5.jpg",
+        "assets/ResidenceH/res6.jpg",
+        "assets/ResidenceH/res7.jpg"
+      ],
+      "prix": 63,
+      "ageEnfant": 0,
+      "distanceCV": 1,
+      "distanceAer": 3,
+      "equipements": {
+        "piscine": true,
+        "parking": true,
+        "plage": true,
+        "wifi": true,
+        "restaurant": true,
+        "bien_etre": true,
+        "golf": false,
+        "club_enf": false,
+        "piscine_couverte": false
+      },
+      "chambre": [
+        "Chambre single Vue mer",
+        "Chambre single Standard Vue Jardin\t",
+        "Chambre double Standard Vue Jardin",
+        "Chambre triple Vue mer",
+        "Chambre quadruple Standard vue jardin",
+        "Chambre quadruple Standard vue mer"
+      ],
+      "description": "Hôtel La Résidence Hammamet est l’unique hôtel situé en plein centre-ville de Hammamet et à seulement 100m d'une plage privée de sable fin.Cet Hôtel saura vous en mettre plein les yeux avec son style arabo mauresque , et son patio naturellement frais et climatisé abritant un magnifique jardin fleurit au milieu du bâtiment.",
+      "disponibilite": [
+        {
+          "date_debut": "2022-01-31T23:00:00.000Z",
+          "date_fin": "2022-03-23T00:00:00.000Z",
+          "siDisponible": true,
+          "pourcentage": 50
+        },
+        {
+          "date_debut": "2022-05-06T23:00:00.000Z",
+          "date_fin": "2022-04-23T00:00:00.000Z",
+          "siDisponible": false,
+          "pourcentage": 24
+        },
+        {
+          "date_debut": "2022-05-05T23:00:00.000Z",
+          "date_fin": "2022-06-23T00:00:00.000Z",
+          "siDisponible": false,
+          "pourcentage": 100
+        }
+      ],
+      "pension": [
+        {
+          "libelleP": "Petit déjeuner",
+          "prixP": 14
+        },
+        {
+          "libelleP": "Demi pension +",
+          "prixP": 18
+        },
+        {
+          "libelleP": "Pension complète +",
+          "prixP": 32
+        },
+        {
+          "libelleP": "Tout inclus",
+          "prixP": 78
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "libelle": "Hôtel de charme",
+      "localisation": "Djerba",
+      "image": [
+        "assets/Charme/charme0.jpg",
+        "assets/Charme/charme1.jpg",
+        "assets/Charme/charme2.jpg",
+        "assets/Charme/charme3.jpg",
+        "assets/Charme/charme4.jpg",
+        "assets/Charme/charme5.jpg"
+      ],
+      "prix": 91,
+      "ageEnfant": 7,
+      "distanceCV": 1.5,
+      "distanceAer": 20,
+      "equipements": {
+        "piscine": true,
+        "parking": true,
+        "plage": true,
+        "wifi": true,
+        "restaurant": true,
+        "bien_etre": true,
+        "golf": true,
+        "club_enf": true,
+        "piscine_couverte": true
+      },
+      "chambre": [
+        "single standard",
+        "double standard",
+        "triple standard"
+      ],
+      "description": "Hotel de charme et SPA Dar El Bhar est un hôtel de 3 étoiles, situé à 4,8 km de l'ISET Djerba et à 4,7 km des Parcours de golf Djerba Golf Club. Situé dans une zone de plage, le site offre 23 chambres avec des soins du visage, un centre de massage et un centre de spa sur place.",
+      "disponibilite": [
+        {
+          "date_debut": "2021-12-09T23:00:00.000Z",
+          "date_fin": "2021-11-21T00:00:00.000Z",
+          "siDisponible": true,
+          "pourcentage": 25
+        },
+        {
+          "date_debut": "2022-02-01T23:00:00.000Z",
+          "date_fin": "2022-03-17T00:00:00.000Z",
+          "siDisponible": false,
+          "pourcentage": 39
+        }
+      ],
+      "pension": [
+        {
+          "libelleP": "Petit déjeuner",
+          "prixP": 20
+        },
+        {
+          "libelleP": "Demi pension +",
+          "prixP": 16
+        },
+        {
+          "libelleP": "Pension complète +",
+          "prixP": 32
+        },
+        {
+          "libelleP": "Tout inclus",
+          "prixP": 88
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "libelle": "Hôtel Yadis Hammamet",
+      "localisation": "Hammamet",
+      "image": [
+        "assets/yadis/yadis0.jpg",
+        "assets/yadis/yadis1.jpg",
+        "assets/yadis/yadis2.jpg",
+        "assets/yadis/yadis3.jpg",
+        "assets/yadis/yadis4.jpg",
+        "assets/yadis/yadis5.jpg",
+        "assets/yadis/yadis6.jpg",
+        "assets/yadis/yadis7.jpg"
+      ],
+      "prix": 153,
+      "ageEnfant": 0,
+      "distanceCV": 1.7,
+      "distanceAer": 8,
+      "equipements": {
+        "piscine": true,
+        "parking": true,
+        "plage": true,
+        "wifi": true,
+        "restaurant": true,
+        "bien_etre": true,
+        "golf": true,
+        "club_enf": true,
+        "piscine_couverte": true
+      },
+      "chambre": [
+        "chambre single ",
+        "chambre quadriple standard"
+      ],
+      "description": "Le Yadis Hammamet est implanté au milieu de jardins soignés, palmiers et plantes méditerranéens et juste en face de la plage de MREZGA, qui est la plus renommée d’Hammamet, avec son sable fin et blanc .",
+      "disponibilite": [
+        {
+          "date_debut": "2021-11-09T23:00:00.000Z",
+          "date_fin": "2021-11-21T00:00:00.000Z",
+          "siDisponible": false,
+          "pourcentage": 39
+        },
+        {
+          "date_debut": "2022-02-11T23:00:00.000Z",
+          "date_fin": "2022-05-17T00:00:00.000Z",
+          "siDisponible": false,
+          "pourcentage": 0
+        }
+      ],
+      "pension": [
+        {
+          "libelleP": "Petit déjeuner",
+          "prixP": 45
+        },
+        {
+          "libelleP": "diner",
+          "prixP": 74
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "libelle": "Hôtel Mahdia Palace",
+      "localisation": "Mahdia",
+      "image": [
+        "assets/mahdiaPalace/mahdiaPalace0.jpg",
+        "assets/mahdiaPalace/mahdiaPalace1.jpg",
+        "assets/mahdiaPalace/mahdiaPalace2.jpg",
+        "assets/mahdiaPalace/mahdiaPalace3.jpg",
+        "assets/mahdiaPalace/mahdiaPalace4.jpg",
+        "assets/mahdiaPalace/mahdiaPalace5.jpg",
+        "assets/mahdiaPalace/mahdiaPalace6.jpg",
+        "assets/mahdiaPalace/mahdiaPalace7.jpg"
+      ],
+      "prix": 185,
+      "ageEnfant": 5,
+      "distanceCV": 0.3,
+      "distanceAer": 10,
+      "equipements": {
+        "piscine": true,
+        "parking": true,
+        "plage": false,
+        "wifi": true,
+        "restaurant": true,
+        "bien_etre": false,
+        "golf": true,
+        "club_enf": true,
+        "piscine_couverte": true
+      },
+      "chambre": [
+        "Chambre single ",
+        "Chambre quadriple standard",
+        "Chambre triple standard"
+      ],
+      "description": "Mahdia Palace se trouve à 8 minutes en voiture du musée et à 9 minutes route de la gare de Mahdia. Sur place, vous profiterez aussi d'un espace de stationnement gratuit, d'une aire de jeux pour enfants et d'un service de garde d'enfants. Enfin, vous rejoindrez la forteresse Borj El Kebir en 9 minutes de route.Les couples apprécient particulièrement l'emplacement de cet établissement. Ils lui donnent la note de 8,0 pour un séjour à deux.",
+      "disponibilite": [
+        {
+          "date_debut": "2021-05-16T23:00:00.000Z",
+          "date_fin": "2021-06-19T23:00:00.000Z",
+          "siDisponible": true,
+          "pourcentage": 45
+        },
+        {
+          "date_debut": "2021-08-09T23:00:00.000Z",
+          "date_fin": "2021-08-20T23:00:00.000Z",
+          "siDisponible": false,
+          "pourcentage": 33
+        }
+      ],
+      "pension": [
+        {
+          "libelleP": "Petit déjeuner",
+          "prixP": 17
+        },
+        {
+          "libelleP": "Demi pension +",
+          "prixP": 26
+        },
+        {
+          "libelleP": "Pension complète +",
+          "prixP": 60
+        },
+        {
+          "libelleP": "Tout inclus",
+          "prixP": 94
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "libelle": "Hôtel One Resort Jockey Monastir",
+      "localisation": "Monastir",
+      "image": [
+        "assets/jockeyMonastir/jockeyMonastir0.jpg",
+        "assets/jockeyMonastir/jockeyMonastir1.jpg",
+        "assets/jockeyMonastir/jockeyMonastir2.jpg",
+        "assets/jockeyMonastir/jockeyMonastir3.jpg",
+        "assets/jockeyMonastir/jockeyMonastir4.jpg",
+        "assets/jockeyMonastir/jockeyMonastir5.jpg",
+        "assets/jockeyMonastir/jockeyMonastir6.jpg",
+        "assets/jockeyMonastir/jockeyMonastir7.jpg"
+      ],
+      "prix": "369",
+      "ageEnfant": "3",
+      "distanceCV": 1,
+      "distanceAer": 3,
+      "equipements": {
+        "piscine": false,
+        "parking": true,
+        "plage": true,
+        "wifi": false,
+        "restaurant": true,
+        "bien_etre": true,
+        "golf": false,
+        "club_enf": true,
+        "piscine_couverte": true
+      },
+      "chambre": [
+        "Chambre single Vue mer",
+        "Chambre single Standard Vue Jardin\t",
+        "Chambre double Vue mer",
+        "Chambre triple Vue jardin",
+        "Chambre quadruple Standard vue jardin",
+        "Chambre quadruple Standard"
+      ],
+      "description": "One Resort Jockey Monastir se situe directement sur une plage de sable fin et de galets, à environ 2 km de l aéroport de Monastir, à 8 km du centre et 3 km du parcours de golf “Flamingo”",
+      "disponibilite": [
+        {
+          "date_debut": "2021-01-09T23:00:00.000Z",
+          "date_fin": "2021-01-24T23:00:00.000Z",
+          "siDisponible": true,
+          "pourcentage": 0
+        },
+        {
+          "date_debut": "2021-04-03T23:00:00.000Z",
+          "date_fin": "2021-05-07T23:00:00.000Z",
+          "siDisponible": false,
+          "pourcentage": 22
+        },
+        {
+          "date_debut": "2021-05-10T23:00:00.000Z",
+          "date_fin": "2021-05-28T23:00:00.000Z",
+          "siDisponible": false,
+          "pourcentage": 28
+        }
+      ],
+      "pension": [
+        {
+          "libelleP": "Petit déjeuner",
+          "prixP": 10
+        },
+        {
+          "libelleP": "Demi pension +",
+          "prixP": 15
+        },
+        {
+          "libelleP": "Pension complète +",
+          "prixP": 47
+        },
+        {
+          "libelleP": "Tout inclus",
+          "prixP": 69
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "libelle": "Hôtel Rosa Beach Spa & thalasso",
+      "localisation": "Monastir",
+      "image": [
+        "assets/rosaM/rosa0.jpg",
+        "assets/rosaM/rosa1.jpg",
+        "assets/rosaM/rosa2.jpg",
+        "assets/rosaM/rosa3.jpg",
+        "assets/rosaM/rosa4.jpg",
+        "assets/rosaM/rosa5.jpg",
+        "assets/rosaM/rosa6.jpg",
+        "assets/rosaM/rosa7.jpg"
+      ],
+      "prix": 226,
+      "ageEnfant": 6,
+      "distanceCV": 2.6,
+      "distanceAer": 1.2,
+      "equipements": {
+        "piscine": true,
+        "parking": true,
+        "plage": true,
+        "wifi": true,
+        "restaurant": true,
+        "bien_etre": false,
+        "golf": true,
+        "club_enf": true,
+        "piscine_couverte": false
+      },
+      "chambre": [
+        "Chambre double Vue mer",
+        "Chambre single Vue Jardin\t",
+        "Chambre double Vue jardin",
+        "Chambre triple Vue jardin",
+        "Chambre quadruple Standard vue mer"
+      ],
+      "description": "L'hôtel Rosa Beach est Situé au cœur de la station hôtelière de Skanès, sur une plage méditerranéenne de sable fin, à 7km du centre de Monastir.",
+      "disponibilite": [
+        {
+          "date_debut": "2021-06-30T23:00:00.000Z",
+          "date_fin": "2021-07-26T23:00:00.000Z",
+          "siDisponible": true,
+          "pourcentage": 11
+        },
+        {
+          "date_debut": "2021-09-14T23:00:00.000Z",
+          "date_fin": "2021-10-14T23:00:00.000Z",
+          "siDisponible": true,
+          "pourcentage": 70
+        },
+        {
+          "date_debut": "2021-11-17T23:00:00.000Z",
+          "date_fin": "2021-12-01T23:00:00.000Z",
+          "siDisponible": false,
+          "pourcentage": 50
+        }
+      ],
+      "pension": [
+        {
+          "libelleP": "Petit déjeuner",
+          "prixP": 17
+        },
+        {
+          "libelleP": "Demi pension +",
+          "prixP": 17
+        },
+        {
+          "libelleP": "Pension complète +",
+          "prixP": 27
+        },
+        {
+          "libelleP": "Tout inclus",
+          "prixP": 77
+        }
+      ]
+    }
+  ]
+}

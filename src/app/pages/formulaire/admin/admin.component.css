@@ -1,0 +1,38 @@
+nav{
+    background-color:rgb(17, 80, 131)
+}
+
+img{
+    width:80px; 
+    height:80px;
+    border-radius:20px;
+}
+
+thead,tbody{
+    text-align:center;
+}
+
+#deconnecter{
+    background-color:rgb(14, 207, 14);
+}
+
+.form-group{
+    padding:8px;
+}
+
+label{
+    margin-left:10px;
+}
+
+#btn{
+    margin-left:180%;
+    width:150px; 
+    height:50px;
+}
+
+h1{
+    text-align: center;
+    font-size:3rem;
+    text-align:center;
+    padding-top:1rem;
+}
